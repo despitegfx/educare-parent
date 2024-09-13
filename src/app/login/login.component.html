@@ -1,0 +1,12 @@
+<div class="cont">
+    <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput placeholder="Enter your email address" [(ngModel)]="email" name="email" required>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput placeholder="Enter your password" [(ngModel)]="password" name="password" required>
+      </mat-form-field>
+      {{txt}}
+      <span class="btn" (click)="onLogin()" >Login</span>
+</div>

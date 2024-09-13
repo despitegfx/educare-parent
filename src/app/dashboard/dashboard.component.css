@@ -1,0 +1,37 @@
+.cardsWrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+    
+}
+
+.card1, .card2, .card3, .card4{
+    height: 100px;
+    max-width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    align-items: center;
+    padding-inline: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.card1{
+    background: #2086d2;
+}
+
+.card2{
+    background: #20AC64;
+}
+
+.card3{
+    background: #E9A61F;
+}
+
+.card4{
+    background: #D44B41;
+}

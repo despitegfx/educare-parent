@@ -1,0 +1,31 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background: #ededed;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.item, .item-last{
+    padding-inline: 15px;
+    padding-block: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+   
+}
+
+.item{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #dcdcdc;
+}
+
+.history{
+    padding-block-start: 15px;
+    padding-inline-start: 15px;
+    color: blue;
+}

@@ -1,0 +1,15 @@
+.user-details{
+    display: flex;
+    column-gap: 10px;
+    margin-block-end: 10px;
+    align-items: center;
+    position:fixed;
+    width: 100%;
+    background: white;
+    padding-block: 10px;
+
+}
+
+.user-details i {
+    font-size: 25px;
+}

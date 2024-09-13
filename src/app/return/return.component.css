@@ -1,0 +1,17 @@
+.back{
+    display: flex;
+    column-gap: 5px;
+    font-size: 13px;
+    margin-block: 15px;
+    justify-content: start;
+    align-items: center;
+}
+
+.back i{
+    color: #2086d2;
+    background: #f1f6fb;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
