@@ -39,8 +39,8 @@
 
 @media (min-width:820px)  { 
     .user-details{
-        justify-content:unset;
-        column-gap: 220px;
+        justify-content:unset !important;
+        column-gap: 220px !important;
         
     }
 
