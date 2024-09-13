@@ -3,6 +3,13 @@ import { MatBottomSheet, MatBottomSheetModule, MatBottomSheetRef } from '@angula
 import { MatListModule } from '@angular/material/list';
 import { ApiService } from '../utils/api.service';
 
+interface Fee {
+    "bill": string,
+    "paid": string,
+    "balance": string, 
+    "date": string
+}
+
 @Component({
   selector: 'app-fees',
   templateUrl: './fees.component.html',
@@ -11,17 +18,15 @@ import { ApiService } from '../utils/api.service';
 export class FeesComponent implements OnInit{
   private _bottomSheet = inject(MatBottomSheet);
 
-  FeeData: any[] = []
+  feeData: Fee[] = []
 
   constructor(private apiService: ApiService){ }
 
   ngOnInit(): void { 
     let studentId = localStorage.getItem("studentId")
-    this.apiService.getRequest(`report.php?id=${studentId}`)
+    this.apiService.getRequest(`fee.php?id=${studentId}`)
     .subscribe(data => {
-      this.FeeData = data;
-      console.log(data);
-       
+      this.feeData = data;
     })
   }
 
@@ -42,6 +47,21 @@ this._bottomSheet.dismiss()
 })
 export class BottomSheetOverviewExampleSheet {
   private _bottomSheetRef = inject<MatBottomSheetRef<BottomSheetOverviewExampleSheet>>(MatBottomSheetRef);
+
+  feeData: any[] = []
+
+  constructor(private apiService: ApiService){ }
+
+  ngOnInit(): void { 
+    let studentId = localStorage.getItem("studentId")
+    this.apiService.getRequest(`fee-records.php?id=${studentId}`)
+    .subscribe(data => {
+      this.feeData = data;
+console.log(data);
+
+    })
+  }
+
 
   closeSheet(): void {
     this._bottomSheetRef.dismiss();

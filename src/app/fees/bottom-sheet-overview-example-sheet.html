@@ -1,15 +1,37 @@
 <div class="payment-history">Fees Payment History</div>
 <div class="content" (click)="closeSheet()">
-    <div class="item">
-        <div class="date">
-            <b>Total Fees ¢</b>
+    <div class="item" *ngFor="let transc of feeData">
+        <div class="good">
+            <div class="date">
+                <b>Total Fees ¢</b>
+            </div>
+            <span class="status">{{transc.bill}}</span>
         </div>
-        <span class="status">20</span>
-    </div>
-    <div class="item">
-        <div class="date">
-            <b>Amount Paid ¢</b>
+        <div class="good">
+            <div class="date">
+                <b>Amount Paid ¢</b>
+            </div>
+            <span class="status">{{ transc.paid }}</span>
         </div>
-        <span class="status">46</span>
+        <div class="good">
+            <div class="date">
+                <b>Amount Owing ¢</b>
+            </div>
+            <span class="status">{{transc.balance}}</span>
+        </div>
+        <div class="good">
+            <div class="date">
+                <b>Received From</b>
+            </div>
+            <span class="status">{{transc.receivedFrom}}</span>
+        </div>
+        <div class="good">
+            <div class="date">
+                <b>Received By</b>
+            </div>
+            <span class="status">{{transc.receivedBy}}</span>
+        </div>
     </div>
+    
+
 </div>

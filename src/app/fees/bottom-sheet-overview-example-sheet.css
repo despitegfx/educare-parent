@@ -16,13 +16,19 @@
     padding-inline: 15px;
     padding-block: 10px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
     font-size: 15px;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #dcdcdc;
+}
+
+.good{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .payment-history{

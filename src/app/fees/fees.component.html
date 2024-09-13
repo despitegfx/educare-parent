@@ -5,19 +5,19 @@
         <div class="date">
             <b>Total Fees ¢</b>
         </div>
-        <span class="status">20</span>
+        <span class="status">{{ feeData[0].bill }}</span>
     </div>
     <div class="item">
         <div class="date">
             <b>Amount Paid ¢</b>
         </div>
-        <span class="status">46</span>
+        <span class="status">{{feeData[0].paid}}</span>
     </div>
     <div class="item-last">
         <div class="date">
             <b>Amount Oweing ¢</b>
         </div>
-        <span class="status">543</span>
+        <span class="status">{{feeData[0].balance}}</span>
     </div>
 </div>
 <div class="history" (click)="openBottomSheet()">Transaction History</div>

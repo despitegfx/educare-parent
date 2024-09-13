@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MaterialComponent } from './material/material.component';
-import { FeesComponent } from './fees/fees.component';
+import { BottomSheetOverviewExampleSheet, FeesComponent } from './fees/fees.component';
 import { AttendanceComponent } from './attendance/attendance.component';
 import { ReportComponent } from './report/report.component';
 import { ReturnComponent } from './return/return.component';
@@ -30,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     ReportComponent,
     ReturnComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    BottomSheetOverviewExampleSheet
   ],
   imports: [
     BrowserModule,
