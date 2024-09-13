@@ -1,13 +1,12 @@
 .user-details{
     display: flex;
-    column-gap: 10px;
-    margin-block-end: 10px;
     align-items: center;
     position:fixed;
     width: 100%;
+    top: 0;
     justify-content: space-between;
     background: white;
-    padding-block: 10px;
+    padding-block: 20px;
 
 }
 
@@ -17,6 +16,7 @@
     column-gap: 10px;
     align-items: center;
     margin-inline-end:30px;
+    
 }
 
 .user-details i {
@@ -35,4 +35,16 @@
 .logout{
     color: red;
     cursor: pointer;
+}
+
+@media (min-width:820px)  { 
+    .user-details{
+        justify-content:unset;
+        column-gap: 220px;
+        
+    }
+
+    .side{
+        margin-inline-end:0 !important;
+    }
 }
