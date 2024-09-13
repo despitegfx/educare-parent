@@ -29,6 +29,8 @@ export class LoginComponent {
         localStorage.setItem("id", JSON.stringify(data))
         localStorage.setItem("student", data[0].id)
           this.router.navigate(['home'])
+      } else  if(data[0].code == "login_failed"){
+          this.txt = "Invalid email/password"
       }
       })
     }

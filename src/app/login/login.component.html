@@ -1,7 +1,7 @@
 <div class="cont">
 
   <div class="top">
-    <img class="main-logo" src="assets/logo.png" alt="" />
+    <img src="assets/logo.png" alt="Educare Management System" />
   </div>
 
     <mat-form-field appearance="outline">
@@ -12,7 +12,7 @@
         <mat-label>Password</mat-label>
         <input type="password" matInput placeholder="Enter your password" [(ngModel)]="password" name="password" required>
       </mat-form-field>
-      {{txt}}
+      <span style="color: red;">{{txt}}</span>
       <span class="btn" (click)="onLogin()" >Login</span> 
       <span class="adm">You don't have an account? Fill and Submit <a href="https://educare.ghanablog.net/admission-page.php">Admission Form</a></span>
 </div>
