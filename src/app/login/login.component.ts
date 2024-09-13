@@ -27,6 +27,7 @@ export class LoginComponent {
       .subscribe(data => {
         if(data[0].code == "login_success"){
         localStorage.setItem("id", JSON.stringify(data))
+        localStorage.setItem("student", data[0].id)
           this.router.navigate(['home'])
       }
       })

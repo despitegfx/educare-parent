@@ -1,62 +1,48 @@
 <app-header></app-header>
-<app-return [pageName]="'Attendance'"></app-return>
+<app-return [pageName]="'Profile'"></app-return>
 
-<div class="content">
+<div class="content" *ngFor="let profile of profileData">
+    
     <div class="item">
         <div class="date">
-            <b>Date</b>
-            <span>2024-04-6</span>
+            <b>Full Name</b>
+            <span>{{profile.family_full_name}}</span>
         </div>
-        <span class="status">In</span>
-    </div>
-    <div class="item">
-        <div class="date">
-            <b>Date</b>
-            <span>2024-04-6</span>
-        </div>
-        <span class="status">In</span>
-    </div>
-    <div class="item">
-        <div class="date">
-            <b>Date</b>
-            <span>2024-04-6</span>
-        </div>
-        <span class="status">In</span>
-    </div>
-    <div class="item">
-        <div class="date">
-            <b>Date</b>
-            <span>2024-04-6</span>
-        </div>
-        <span class="status">In</span>
     </div>
 
     <div class="item">
         <div class="date">
-            <b>Date</b>
-            <span>2024-04-6</span>
+            <b>Email Address</b>
+            <span>{{profile.family_email}}</span>
         </div>
-        <span class="status">In</span>
     </div>
+
     <div class="item">
         <div class="date">
-            <b>Date</b>
-            <span>2024-04-6</span>
+            <b>Phone</b>
+            <span>{{profile.family_phone}}</span>
         </div>
-        <span class="status">In</span>
     </div>
+
     <div class="item">
         <div class="date">
-            <b>Date</b>
-            <span>2024-04-6</span>
+            <b>Occupation</b>
+            <span>{{profile.family_occupation}}</span>
         </div>
-        <span class="status">In</span>
     </div>
+
+
     <div class="item">
         <div class="date">
-            <b>Date</b>
-            <span>2024-04-6</span>
+            <b>Nationality</b>
+            <span>{{profile.family_nationality}}</span>
         </div>
-        <span class="status">In</span>
+    </div>
+    
+    <div class="item">
+        <div class="date">
+            <b>Child's Name</b>
+            <span>{{profile.other_name}} {{profile.sname}}</span>
+        </div>
     </div>
 </div>

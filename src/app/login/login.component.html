@@ -1,4 +1,9 @@
 <div class="cont">
+
+  <div class="top">
+    <h3>Educare Management System</h3>
+  </div>
+
     <mat-form-field appearance="outline">
         <mat-label>Email</mat-label>
         <input type="email" matInput placeholder="Enter your email address" [(ngModel)]="email" name="email" required>
@@ -8,5 +13,6 @@
         <input type="password" matInput placeholder="Enter your password" [(ngModel)]="password" name="password" required>
       </mat-form-field>
       {{txt}}
-      <span class="btn" (click)="onLogin()" >Login</span>
+      <span class="btn" (click)="onLogin()" >Login</span> 
+      <span class="adm">You don't have an account? Fill and Submit <a href="https://educare.ghanablog.net/admission-page.php">Admission Form</a></span>
 </div>

@@ -5,6 +5,11 @@
     justify-content: center;
 }
 
+.top,.adm{
+    margin-top: 50px;
+    text-align: center;
+}
+
 .btn{
     padding-block: 15px;
     padding-inline: 50px;

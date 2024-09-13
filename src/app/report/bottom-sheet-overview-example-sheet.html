@@ -1,0 +1,51 @@
+<div class="payment-history">{{ reportDetail.firstname }}'s Daily Report</div><hr>
+<div class="content" (click)="closeSheet()">
+    <div class="item">
+        <div class="date">
+            <b>Activities</b>
+            <span>{{reportDetail.activities}}</span>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="date">
+            <b>Bathroom</b>
+            <span>{{reportDetail.bathroom}}</span>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="date">
+            <b>Health</b>
+            <span>{{reportDetail.health}}</span>
+        </div>
+    </div>
+
+
+    <div class="item">
+        <div class="date">
+            <b>Meals</b>
+            <span>{{reportDetail.meals}}</span>
+        </div>
+    </div>
+    
+    <div class="item">
+        <div class="date">
+            <b>Mood</b>
+            <span>{{reportDetail.mood}}</span>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="date">
+            <b>Note</b>
+            <span>{{reportDetail.note}}</span>
+        </div>
+    </div>
+    <div class="item">
+        <div class="date">
+            <b>Report Date</b>
+            <span>{{reportDetail.date}}</span>
+        </div>
+    </div>
+</div>

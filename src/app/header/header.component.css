@@ -5,11 +5,34 @@
     align-items: center;
     position:fixed;
     width: 100%;
+    justify-content: space-between;
     background: white;
     padding-block: 10px;
 
 }
 
+.side{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    margin-inline-end:30px;
+}
+
 .user-details i {
     font-size: 25px;
+}
+
+.chat{
+    padding: 10px;
+    background: green;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logout{
+    color: red;
+    cursor: pointer;
 }
